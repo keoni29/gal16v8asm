@@ -1,0 +1,48 @@
+JEDEC File*
+n filename: _DECADE.JED
+N description: 8 stage decade counter with synchronous reset on pin 2*
+N author: KVl
+N date: 20-06-2019
+N device: GAL16V8
+
+N Number of fuses*
+QF2194*
+
+N Set undefined fuses to 1 (blown/disconnected)*
+F1*
+
+N Registered Mode using SYN=0,AC0=1*
+L2192 01*
+
+N AND Matrix fuses*
+N     iiqq iiqq iiqq iiqq iiqq iiqq iiqq iiqq*
+N     0000 1111 2222 3333 4444 5555 6666 7777*
+N     |/|/ |/|/ |/|/ |/|/ |/|/ |/|/ |/|/ |/|/*
+L0    1011 1111 1111 1111 1111 1111 1111 1111*
+L32   1111 1111 1111 1111 1111 1111 1111 1101*
+
+L256  0101 1111 1111 1111 1111 1111 1111 1111*
+
+L512  0111 1101 1111 1111 1111 1111 1111 1111*
+
+L768  0111 1111 1101 1111 1111 1111 1111 1111*
+
+L1024 0111 1111 1111 1101 1111 1111 1111 1111*
+
+L1280 0111 1111 1111 1111 1101 1111 1111 1111*
+
+L1536 0111 1111 1111 1111 1111 1101 1111 1111*
+
+L1792 0111 1111 1111 1111 1111 1111 1101 1111*
+
+N Active HIGH outputs using XOR=1*
+L2048 1111 1111*
+
+N Registered configuration for Registered mode using AC1=0*
+L2120 0000 0000*
+
+N Product term disable using PTD fuse*
+L2128 1100 0000  1000 0000  1000 0000  1000 0000  1000 0000  1000 0000  1000 0000  1000 0000*
+
+N Invalid checksum*
+C0000*0000

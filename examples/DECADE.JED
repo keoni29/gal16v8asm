@@ -1,0 +1,39 @@
+JEDEC File*
+N Number of fuses*
+QF2194*
+
+N Set undefined fuses to 1 (blown/disconnected)*
+F1*
+
+N Registered Mode using SYN=0,AC0=1*
+L2192 01*
+
+N Active HIGH outputs using XOR=1*
+2048 1111 1111*
+
+N Registered configuration for Registered mode using AC1=0*
+L2120 0000 0000*
+
+N AND Matrix fuses*
+L1 0*
+L62 0*
+L256 0*
+L258 0*
+L512 0*
+L518 0*
+L768 0*
+L778 0*
+L1024 0*
+L1038 0*
+L1280 0*
+L1298 0*
+L1536 0*
+L1558 0*
+L1792 0*
+L1818 0*
+
+N Product term disable using PTD fuse*
+L2128 1100000010000000100000001000000010000000100000001000000010000000*
+
+N Invalid checksum*
+C0000*0000

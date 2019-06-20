@@ -1,0 +1,24 @@
+JEDEC File*
+N Number of fuses*
+QF2194*
+
+N Set undefined fuses to 1 (blown/disconnected)*
+F1*
+
+N Simple Mode using SYN=1,AC0=0*
+L2192 10*
+
+N AND Matrix fuses*
+L0000 0111 0111*
+
+N Active output pin19 using XOR=1*
+L2048 1*
+
+N Output with feedback using AC1=0*
+L2120 0000 0000*
+
+N Product term disable using PTD fuse*
+L2128 1000 0000  0000 0000  0000 0000  0000 0000  0000 0000  0000 0000  0000 0000  0000 0000*
+
+N Invalid checksum*
+C0000*0000
