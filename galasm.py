@@ -1,10 +1,24 @@
+# GAL16v8 assembler
+# Author : Koen van Vliet
+# 
+
+import argparse
+import os.path
+
+
 nof_terms = 8 # Number of terms per macrocell OR gate
 nof_outputs = 8 # Number of outputs/macrocells
 nof_inputs = 8 # Number of NAND matrix inputs
 ptd = [ [0]*nof_terms for _ in range(nof_outputs) ]
 
-with open('decade_counter.eqn', 'r') as infile:
-    with open('DECADE.JED', 'w') as outfile:
+parser = argparse.ArgumentParser()
+parser.add_argument('filename')
+args = parser.parse_args()
+infilename = args.filename
+outfilename = os.path.splitext(infilename)[0] + '.JED'
+
+with open(infilename, 'r') as infile:
+    with open(outfilename, 'w') as outfile:
         outfile.write(( "\x02JEDEC File*\n"
                         "N Number of fuses*\n"
                         "QF2194*\n"
